@@ -1,0 +1,151 @@
+.tv-container {
+  font-family: sans-serif;
+  background: white;
+  color: #333;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.tv-center-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.tv-center-logo {
+  width: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.tv-center-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.tv-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tv-card {
+  flex: 1;
+  max-width: 350px;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.yellow-card {
+  border-color: #e6b800;
+}
+
+.green-card {
+  border-color: #1b8a3f;
+}
+
+.yellow-box {
+  background-color: #ffc107;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.green-box {
+  background-color: #28a745;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+}
+
+.bill-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.patient-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.added-time {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.waiting-section {
+  margin-top: 2rem;
+}
+
+.tv-waiting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tv-waiting-card {
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.tv-waiting-card .name {
+  font-weight: 500;
+}
+
+.tv-waiting-card .bill {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.tv-waiting-card .number {
+  align-self: flex-end;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.tv-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.developed {
+  font-size: 0.85rem;
+}
+
+.tv-qr {
+  text-align: center;
+}
+
+.tv-qr img {
+  width: 60px;
+  height: 60px;
+}
+
+.tv-qr small {
+  font-size: 0.7rem;
+}

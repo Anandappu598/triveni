@@ -1,0 +1,81 @@
+:root {
+  --header-height: 64px; /* Define header height as a variable */
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Ensure proper sizing and spacing */
+  box-sizing: border-box;
+  height: var(--header-height);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.clinic-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  /* Increased gap to provide more space between navigation items */
+  gap: 32px;
+}
+
+.header-nav .nav-link {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* Ensure text doesn't get cut off */
+  white-space: nowrap;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-nav .nav-link:hover {
+  background-color: #f0f7ff;
+}
+
+.header-nav .active {
+  color: #2d5fff;
+  background-color: #e6f0ff; /* Light blue background for active state */
+  font-weight: 600;
+}
+
+/* Classes for header visibility control */
+.app-header.hover-hidden {
+  transition: transform 0.3s ease-in-out;
+}
+
+.app-header.hide {
+  transform: translateY(-100%);
+}
+
+.app-header.show {
+  transform: translateY(0);
+}
