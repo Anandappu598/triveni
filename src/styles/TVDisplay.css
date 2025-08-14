@@ -139,13 +139,24 @@
 
 .tv-qr {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tv-qr img {
   width: 60px;
   height: 60px;
+  margin-bottom: 5px;
+}
+
+.qr-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tv-qr small {
   font-size: 0.7rem;
+  line-height: 1.2;
 }

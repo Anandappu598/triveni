@@ -64,7 +64,10 @@ const TVDisplayPage = () => {
         <div className="developed">© Developed by Jeshwanth</div>
         <div className="tv-qr">
           <img src="/assets/qrcode.png" alt="QR Code" />
-          <small>Going outside ?<br />not at all a problem</small>
+          <div className="qr-text">
+            <small>Going outside?</small>
+            <small>not at all a problem</small>
+          </div>
         </div>
       </div>
     </div>
